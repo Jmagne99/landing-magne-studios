@@ -1,65 +1,44 @@
-import Image from "next/image";
+import Script from "next/script";
+
+import { Hero } from "@/components/landing/hero";
+import { ProcessSteps } from "@/components/landing/process-steps";
+import { WhyMicroPyme } from "@/components/landing/why-micro-pyme";
+import { magneLandingBg } from "@/lib/magne-landing-bg";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main
+      className="relative min-h-0 w-full min-w-0 flex-1 overflow-x-hidden"
+      style={magneLandingBg}
+    >
+      <Hero />
+      <ProcessSteps />
+      <WhyMicroPyme />
+      <section
+        id="agendar"
+        className="scroll-mt-[max(5.5rem,env(safe-area-inset-top,0px)+4rem)] bg-transparent px-3 py-10 pb-[max(7rem,env(safe-area-inset-bottom,0px)+4.5rem)] sm:scroll-mt-28 sm:px-4 sm:py-16 md:py-20"
+        aria-labelledby="agendar-heading"
+      >
+        <h2
+          id="agendar-heading"
+          className="mb-8 text-center text-xl font-bold tracking-tight text-white sm:mb-10 sm:text-2xl"
+        >
+          Agendá tu reunión
+        </h2>
+        <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-white/[0.08] bg-[#12131a]/40 shadow-[0_24px_80px_-32px_rgba(0,0,0,0.8)] ring-1 ring-white/[0.04]">
+          <iframe
+            src="https://api.leadconnectorhq.com/widget/booking/F22A9CBdR5qcmndyb1kY"
+            title="Calendario — Magne Studios"
+            scrolling="no"
+            id="F22A9CBdR5qcmndyb1kY_1775186026647"
+            className="block min-h-[min(88svh,720px)] w-full min-w-0 border-0 sm:min-h-[650px]"
+          />
+        </div>
+        <Script
+          src="https://link.msgsndr.com/js/form_embed.js"
+          strategy="afterInteractive"
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
