@@ -36,7 +36,7 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative overflow-x-clip overflow-y-visible bg-transparent pb-8 pt-0 sm:overflow-x-visible sm:pb-12 md:pb-14">
+    <section className="relative overflow-x-clip overflow-y-visible bg-transparent pb-5 pt-0 sm:overflow-x-visible sm:pb-8 md:pb-10">
       <div className="mx-auto max-w-4xl px-3 pt-5 sm:px-6 sm:pt-6 lg:px-8">
         <div
           className={cn(
@@ -50,9 +50,9 @@ export function Hero() {
         </div>
       </div>
 
-      <div className="mx-auto flex w-full min-w-0 max-w-5xl flex-col items-center px-3 pb-[max(11rem,calc(env(safe-area-inset-bottom,0px)+10rem))] pt-8 sm:px-6 sm:pb-8 sm:pt-10 md:pb-10 lg:px-8">
+      <div className="mx-auto flex w-full min-w-0 max-w-5xl flex-col items-center px-3 pb-[max(5.5rem,calc(env(safe-area-inset-bottom,0px)+4.5rem))] pt-6 sm:px-6 sm:pb-6 sm:pt-8 md:pb-7 lg:px-8">
         <h1 className="mx-auto flex w-full max-w-4xl flex-col items-center gap-1.5 px-2 text-center sm:gap-2 sm:px-4 md:gap-2.5">
-          <span className="block max-w-full break-words font-extrabold uppercase leading-none tracking-tight text-[#9bff00] drop-shadow-[0_0_20px_rgba(155,255,0,0.35)] text-[clamp(1.15rem,4vw,1.875rem)] sm:text-3xl">
+          <span className="block max-w-full break-words font-extrabold uppercase leading-none tracking-tight text-[#7ec85a] drop-shadow-[0_0_12px_rgba(100,175,90,0.2)] text-[clamp(1.15rem,4vw,1.875rem)] sm:text-3xl">
             EN 30 DÍAS
           </span>
           <span className="block max-w-full text-balance break-words font-bold uppercase leading-snug tracking-tight text-white text-[clamp(0.9375rem,3.5vw,1.625rem)] sm:text-xl md:text-2xl">
@@ -60,7 +60,7 @@ export function Hero() {
           </span>
         </h1>
         <p
-          className="mt-4 max-w-[min(100%,24rem)] text-balance text-center text-[0.9375rem] font-extrabold uppercase leading-snug tracking-tight text-[#9bff00] drop-shadow-[0_0_24px_rgba(155,255,0,0.35)] [word-break:break-word] sm:mt-5 sm:max-w-2xl sm:text-base md:max-w-3xl md:text-xl md:leading-snug lg:text-2xl lg:leading-snug"
+          className="mt-3 max-w-[min(100%,24rem)] text-balance text-center text-[0.9375rem] font-extrabold uppercase leading-snug tracking-tight text-[#7ec85a] drop-shadow-[0_0_14px_rgba(100,175,90,0.22)] [word-break:break-word] sm:mt-4 sm:max-w-2xl sm:text-base md:max-w-3xl md:text-xl md:leading-snug lg:text-2xl lg:leading-snug"
         >
           Pagando un 75% menos que si contrataras una empresa grande.
         </p>

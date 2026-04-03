@@ -53,13 +53,13 @@ function StepVisual({ type }: { type: "scope" | "build" | "value" }) {
               className={cn(
                 "relative flex size-14 items-center justify-center rounded-2xl border border-white/10 bg-[#1a1b24] shadow-lg transition-transform",
                 i === 1 &&
-                  "z-10 scale-110 border-[#9bff00]/40 shadow-[0_0_32px_-4px_rgba(155,255,0,0.55)]"
+                  "z-10 scale-110 border-[#7ec85a]/40 shadow-[0_0_32px_-4px_rgba(100,175,90,0.32)]"
               )}
             >
               <UserRound
                 className={cn(
                   "size-7",
-                  i === 1 ? "text-[#9bff00]" : "text-white/25"
+                  i === 1 ? "text-[#7ec85a]" : "text-white/25"
                 )}
                 strokeWidth={1.5}
               />
@@ -81,7 +81,7 @@ function StepVisual({ type }: { type: "scope" | "build" | "value" }) {
     return (
       <div className="relative flex h-[120px] w-full items-center justify-center sm:h-[140px]">
         <div
-          className="animate-magne-glow-pulse absolute inset-6 rounded-full bg-[#9bff00]/20 blur-3xl"
+          className="animate-magne-glow-pulse absolute inset-6 rounded-full bg-[#7ec85a]/20 blur-3xl"
           aria-hidden
         />
         <div className="relative">
@@ -91,13 +91,13 @@ function StepVisual({ type }: { type: "scope" | "build" | "value" }) {
               strokeWidth={1.2}
             />
             <Zap
-              className="absolute size-9 text-[#9bff00] drop-shadow-[0_0_20px_rgba(155,255,0,0.9)]"
+              className="absolute size-9 text-[#7ec85a] drop-shadow-[0_0_20px_rgba(100,175,90,0.45)]"
               fill="currentColor"
               strokeWidth={0}
             />
           </div>
           <div className="mt-2 flex justify-center gap-1">
-            <Sparkles className="size-4 text-[#9bff00]/80" />
+            <Sparkles className="size-4 text-[#7ec85a]/80" />
             <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
               ~30 días
             </span>
@@ -117,7 +117,7 @@ function StepVisual({ type }: { type: "scope" | "build" | "value" }) {
       <div className="relative flex items-center gap-3">
         <div className="relative">
           <Cog
-            className="size-[4.5rem] text-[#9bff00] drop-shadow-[0_0_28px_rgba(155,255,0,0.55)]"
+            className="size-[4.5rem] text-[#7ec85a] drop-shadow-[0_0_28px_rgba(100,175,90,0.32)]"
             strokeWidth={1.1}
           />
           <CircleDollarSign
@@ -149,7 +149,7 @@ export function ProcessSteps() {
             <span className="block w-full">
               construye tu app en tres pasos.
             </span>
-            <span className="mt-1 block w-full text-balance text-lg font-extrabold uppercase leading-tight tracking-tight text-[#9bff00] drop-shadow-[0_0_20px_rgba(155,255,0,0.3)] [word-break:break-word] sm:mt-1.5 sm:text-3xl md:text-4xl">
+            <span className="mt-1 block w-full text-balance text-lg font-extrabold uppercase leading-tight tracking-tight text-[#7ec85a] drop-shadow-[0_0_20px_rgba(100,175,90,0.2)] [word-break:break-word] sm:mt-1.5 sm:text-3xl md:text-4xl">
               Hasta un 75% menos que una empresa grande.
             </span>
           </h2>
@@ -168,7 +168,7 @@ export function ProcessSteps() {
                 className="animate-magne-card-float rounded-2xl p-[1px] shadow-[0_24px_60px_-28px_rgba(0,0,0,0.85)] transition-[transform] duration-500 group-hover:-translate-y-1"
                 style={{ animationDelay: step.delay }}
               >
-                <div className="rounded-2xl bg-gradient-to-br from-[#6763ff]/45 via-white/[0.12] to-[#9bff00]/35 p-[1px]">
+                <div className="rounded-2xl bg-gradient-to-br from-[#6763ff]/45 via-white/[0.12] to-[#7ec85a]/22 p-[1px]">
                 <div className="relative overflow-hidden rounded-2xl bg-[#12131a]/95 backdrop-blur-xl">
                   <div
                     className="pointer-events-none absolute inset-0 opacity-[0.07]"

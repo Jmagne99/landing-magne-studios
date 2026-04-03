@@ -18,7 +18,7 @@ const REASONS: {
     title: (
       <>
         Trabajamos más rápido que una empresa de software tradicional{" "}
-        <span className="text-[#9bff00] drop-shadow-[0_0_12px_rgba(155,255,0,0.35)]">
+        <span className="text-[#7ec85a] drop-shadow-[0_0_12px_rgba(100,175,90,0.22)]">
           (son lentas, caras, y aburridas)
         </span>.
       </>
@@ -48,7 +48,7 @@ export function WhyMicroPyme() {
             className="text-balance text-xl font-bold leading-snug tracking-tight text-white sm:text-2xl md:text-3xl md:leading-tight"
           >
             ¿Por qué crear tu app con una{" "}
-            <span className="text-[#9bff00] drop-shadow-[0_0_18px_rgba(155,255,0,0.35)]">
+            <span className="text-[#7ec85a] drop-shadow-[0_0_18px_rgba(100,175,90,0.22)]">
               micro-pyme
             </span>{" "}
             como la nuestra?
@@ -58,7 +58,7 @@ export function WhyMicroPyme() {
         {/* Timeline vertical: distinto al grid de tarjetas de los pasos */}
         <div className="relative mx-auto mt-14 max-w-2xl">
           <div
-            className="absolute bottom-12 left-[1.375rem] top-12 w-px bg-gradient-to-b from-[#9bff00]/70 via-[#6763ff]/45 to-[#9bff00]/25 sm:left-[1.75rem]"
+            className="absolute bottom-12 left-[1.375rem] top-12 w-px bg-gradient-to-b from-[#7ec85a]/70 via-[#6763ff]/45 to-[#7ec85a]/25 sm:left-[1.75rem]"
             aria-hidden
           />
           <ul className="relative space-y-0">
@@ -70,14 +70,14 @@ export function WhyMicroPyme() {
                   className="relative flex gap-4 pb-12 last:pb-0 sm:gap-6"
                 >
                   <div className="relative z-[1] flex shrink-0 flex-col items-center">
-                    <div className="flex size-11 items-center justify-center rounded-full border border-[#9bff00]/35 bg-[#0e0f14] shadow-[0_0_28px_-6px_rgba(155,255,0,0.55)] ring-2 ring-[#12131a] sm:size-14">
+                    <div className="flex size-11 items-center justify-center rounded-full border border-[#7ec85a]/35 bg-[#0e0f14] shadow-[0_0_28px_-6px_rgba(100,175,90,0.3)] ring-2 ring-[#12131a] sm:size-14">
                       <Icon
                         className="size-[1.35rem] text-white sm:size-6"
                         strokeWidth={1.35}
                       />
                       {i === 2 && (
                         <Sparkles
-                          className="absolute -right-1 -top-1 size-5 text-[#9bff00] drop-shadow-[0_0_10px_rgba(155,255,0,0.85)]"
+                          className="absolute -right-1 -top-1 size-5 text-[#7ec85a] drop-shadow-[0_0_10px_rgba(100,175,90,0.4)]"
                           fill="currentColor"
                           strokeWidth={0}
                           aria-hidden
@@ -91,7 +91,7 @@ export function WhyMicroPyme() {
                           {[0, 1, 2].map((j) => (
                             <span
                               key={j}
-                              className="h-1 w-1 rounded-full bg-[#9bff00]/90 shadow-[0_0_6px_rgba(155,255,0,0.9)]"
+                              className="h-1 w-1 rounded-full bg-[#7ec85a]/90 shadow-[0_0_6px_rgba(100,175,90,0.42)]"
                             />
                           ))}
                         </span>
