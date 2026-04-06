@@ -1,0 +1,107 @@
+================================================================================
+MAGNÉ STUDIOS — COPY PARA LANDING EN GOHIGHLEVEL
+(Copiá sección por sección en bloques de texto / HTML según el editor)
+================================================================================
+
+--- REFERENCIA DE MARCA (para estilos en GHL) ---
+Fondo oscuro sugerido: #0c0d12 o #12131a
+Texto principal: blanco #ffffff
+Acento verde (no chillón): #7ec85a
+Violeta secundario: #6763FF
+
+================================================================================
+1) CINTILLO / BADGE SUPERIOR
+================================================================================
+MAGNÉ STUDIOS
+
+================================================================================
+2) HERO — TÍTULO (H1 en varias líneas)
+================================================================================
+Línea 1 (destacada, color verde acento):
+EN 30 DÍAS
+
+Línea 2 (blanco):
+TENÉ LISTA TU APLICACIÓN O AUTOMATIZACIÓN
+
+Subtítulo / promesa (verde acento):
+PAGANDO UN 75% MENOS QUE SI CONTRATARAS UNA EMPRESA GRANDE.
+
+Texto escasez (cursiva / gris claro, debajo del 75%):
+Por capacidad del equipo, abrimos solo 6 proyectos nuevos por mes. Si tu idea tiene fecha, conviene que hablemos ya.
+
+================================================================================
+3) BARRA CTA (texto + botón; en GHL suele ser sección fija o popup)
+================================================================================
+Texto:
+Click en este botón para tener una videollamada de asesoramiento con nosotros
+
+Texto del botón:
+QUIERO AGENDAR
+(Enlazar al ancla #agendar o a la URL de la página con /#agendar, o al widget de calendario)
+
+================================================================================
+4) PROCESO — TÍTULO DE SECCIÓN
+================================================================================
+[Botón: QUIERO AGENDAR — mismo enlace que arriba]
+
+Así es como Magne Studios
+construye tu app en tres pasos.
+
+HASTA UN 75% MENOS QUE UNA EMPRESA GRANDE.
+
+================================================================================
+5) PROCESO — TRES PASOS (tarjetas)
+================================================================================
+PASO 1 — Título:
+Comenzamos a trabajar juntos
+
+PASO 2 — Título:
+Desarrollo en ~30 días
+
+PASO 3 — Título:
+Pruebas y lanzamiento
+
+================================================================================
+6) SECCIÓN “¿POR QUÉ PYME?”
+================================================================================
+Pero…
+
+¿Por qué crear tu app con una pyme como la nuestra?
+
+Párrafo:
+Pagás menos porque nuestro modelo de trabajo combina un equipo reducido con las últimas tecnologías en IA: menos costos fijos, más velocidad y eficiencia en cada proyecto.
+
+--- Lista / viñetas (orden de la web) ---
+
+1) Mucho más barato: tu inversión va a producto, no a capas de gestión innecesarias.
+
+2) Trabajamos más rápido que una empresa de software tradicional (son lentas, caras, y aburridas).
+   [En GHL podés poner solo “(son lentas, caras, y aburridas)” en verde si querés destacar]
+
+3) Somos jóvenes, y esa es nuestra ventaja, estamos más adelantados que el resto en tecnología.
+
+================================================================================
+7) AGENDA — TÍTULO DE SECCIÓN
+================================================================================
+Agendá tu reunión
+
+================================================================================
+8) EMBED DEL CALENDARIO (LeadConnector / GoHighLevel)
+Pegalo en un bloque “HTML” o “Custom code” al final de la página.
+================================================================================
+
+<iframe
+  src="https://api.leadconnectorhq.com/widget/booking/F22A9CBdR5qcmndyb1kY"
+  style="width:100%;border:none;overflow:hidden;min-height:600px;"
+  scrolling="no"
+  id="F22A9CBdR5qcmndyb1kY_1775186026647"
+  title="Calendario — Magne Studios"
+></iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
+================================================================================
+NOTAS PARA GHL
+================================================================================
+• Poné id="agendar" en la sección del calendario (o en un contenedor HTML) para que los botones “QUIERO AGENDAR” con ancla #agendar hagan scroll hasta el calendario.
+• Si el editor no deja <script>, GHL a veces carga el script del embed solo con el iframe; probá primero solo el iframe.
+• Altura: si el calendario se corta, subí min-height del iframe (ej. 650px o 720px).

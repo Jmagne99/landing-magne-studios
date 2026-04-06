@@ -15,10 +15,14 @@ export function BookingSection() {
     >
       <h2
         id="agendar-heading"
-        className="mb-8 text-center text-xl font-bold tracking-tight text-white sm:mb-10 sm:text-2xl"
+        className="mb-4 text-center text-xl font-bold tracking-tight text-white sm:mb-5 sm:text-2xl"
       >
         Agendá tu reunión
       </h2>
+      <p className="mx-auto mb-8 max-w-xl text-balance text-center text-[0.8125rem] italic leading-relaxed text-white/70 sm:mb-10 sm:max-w-2xl sm:text-sm md:text-[0.9375rem]">
+        Por capacidad del equipo, abrimos solo 6 proyectos nuevos por mes. Si tu
+        idea tiene fecha, conviene que hablemos ya.
+      </p>
       <div className="mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-white/[0.08] bg-[#12131a]/40 shadow-[0_24px_80px_-32px_rgba(0,0,0,0.8)] ring-1 ring-white/[0.04]">
         <iframe
           src={BOOKING_IFRAME_SRC}
