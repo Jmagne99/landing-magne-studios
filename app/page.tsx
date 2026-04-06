@@ -2,7 +2,7 @@ import Script from "next/script";
 
 import { Hero } from "@/components/landing/hero";
 import { ProcessSteps } from "@/components/landing/process-steps";
-import { WhyMicroPyme } from "@/components/landing/why-micro-pyme";
+import { WhyPyme } from "@/components/landing/why-pyme";
 import { magneLandingBg } from "@/lib/magne-landing-bg";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     >
       <Hero />
       <ProcessSteps />
-      <WhyMicroPyme />
+      <WhyPyme />
       <section
         id="agendar"
         className="scroll-mt-[max(5.5rem,env(safe-area-inset-top,0px)+4rem)] bg-transparent px-3 py-10 pb-[max(7rem,env(safe-area-inset-bottom,0px)+4.5rem)] sm:scroll-mt-28 sm:px-4 sm:py-16 md:py-20"

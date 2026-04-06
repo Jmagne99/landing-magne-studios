@@ -10,7 +10,8 @@ const REASONS: {
   {
     id: "price",
     icon: PiggyBank,
-    title: "Mucho más barato, ya que tenemos un equipo pequeño.",
+    title:
+      "Mucho más barato: tu inversión va a producto, no a capas de gestión innecesarias.",
   },
   {
     id: "speed",
@@ -20,7 +21,8 @@ const REASONS: {
         Trabajamos más rápido que una empresa de software tradicional{" "}
         <span className="text-[#7ec85a] drop-shadow-[0_0_12px_rgba(100,175,90,0.22)]">
           (son lentas, caras, y aburridas)
-        </span>.
+        </span>
+        .
       </>
     ),
   },
@@ -32,11 +34,11 @@ const REASONS: {
   },
 ];
 
-export function WhyMicroPyme() {
+export function WhyPyme() {
   return (
     <section
       className="relative bg-transparent px-3 pb-14 pt-4 sm:px-6 sm:pb-20 md:pb-28 lg:px-8"
-      aria-labelledby="why-micro-pyme-heading"
+      aria-labelledby="why-pyme-heading"
     >
       <div className="mx-auto max-w-6xl">
         <div className="mx-auto max-w-3xl text-center">
@@ -44,19 +46,23 @@ export function WhyMicroPyme() {
             Pero…
           </p>
           <h2
-            id="why-micro-pyme-heading"
+            id="why-pyme-heading"
             className="text-balance text-xl font-bold leading-snug tracking-tight text-white sm:text-2xl md:text-3xl md:leading-tight"
           >
             ¿Por qué crear tu app con una{" "}
             <span className="text-[#7ec85a] drop-shadow-[0_0_18px_rgba(100,175,90,0.22)]">
-              micro-pyme
+              pyme
             </span>{" "}
             como la nuestra?
           </h2>
+          <p className="mx-auto mt-5 max-w-2xl text-balance text-sm leading-relaxed text-white/70 sm:mt-6 sm:text-base">
+            Pagás menos porque nuestro modelo de trabajo combina un equipo reducido
+            con las últimas tecnologías en IA: menos costos fijos, más velocidad y
+            eficiencia en cada proyecto.
+          </p>
         </div>
 
-        {/* Timeline vertical: distinto al grid de tarjetas de los pasos */}
-        <div className="relative mx-auto mt-14 max-w-2xl">
+        <div className="relative mx-auto mt-12 max-w-2xl sm:mt-14">
           <div
             className="absolute bottom-12 left-[1.375rem] top-12 w-px bg-gradient-to-b from-[#7ec85a]/70 via-[#6763ff]/45 to-[#7ec85a]/25 sm:left-[1.75rem]"
             aria-hidden
